@@ -1,0 +1,102 @@
+:root {
+
+    --white: #FFFFFF;
+    --black: #000000;
+    --contrast: #C447FF;
+    --maincold: #56488D;
+    --main: #77488D;
+    --mainwarm: #84488D;
+
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(./Inter-VariableFont.woff2);
+}
+
+body {
+    font-family: Inter;
+    font-weight: 400;
+    background-color: var(--white);
+    margin: 0;
+}
+
+.headerbox {
+    border-style: none;
+    max-height: fit-content;
+    background-color: var(--main);
+    padding: 5em 20em 5em 20em;
+}
+
+.headerbox-inner {
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.headerbox-inner-avatar img {
+    width: 8em;
+    height: 8em;
+}
+
+/* .headerbox-inner-menu_button img {
+    background: var(--black);
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    left: 20em;
+    top: 5em;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.headerbox-inner-menu_button:hover img {
+    opacity: 1;
+} */
+
+.headerbox-inner-scrolled_mini {
+    height: 3em;
+}
+
+
+
+
+.main-inner {
+    padding: 5em 20em 5em 20em;
+}
+
+.main-inner-box {
+    border-style: none none solid none;
+    border-width: 0.1em;
+    border-color: var(--main);
+    padding: 1em 0 1em 0;
+    
+}
+
+.main-inner-box-header {
+    background-color: var(--mainwarm);
+    color: var(--white);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-weight: 500;
+    min-height: 1em;
+    width: fit-content;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+
+.main-inner-box-text {
+    margin: 1em 0 1em 0;
+
+}
+
+.main-inner-box-link {
+    text-decoration: none;
+    color: var(--contrast);
+
+}
+
+footer {
+height: 2em;
+background-color: var(--main);
+}
