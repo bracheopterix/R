@@ -30,11 +30,11 @@ body {
     top: 0;
 }
 
-.headerbox_mini {
+/* .headerbox_mini {
     max-height: 5em;
     background-color: var(--black);
     padding: 0 20em 0 20em;
-}
+} */
 
 .headerbox-inner {
     max-width: fit-content;
@@ -46,10 +46,10 @@ body {
     height: 8em;
 }
 
-.headerbox-inner-avatar_mini img{
+/* .headerbox-inner-avatar_mini img{
     height: 3em;
     width: 3em;
-}
+} */
 
 .headerbox-inner-menu_button img {
     background: var(--black);

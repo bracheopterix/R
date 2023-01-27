@@ -1,10 +1,11 @@
 
 let header = document.getElementById('headerbox');
 let avatar = document.getElementById('headerbox-inner-avatar-img')
+let menuButton = document.getElementById('headerbox-inner-menu-button')
 
 console.log("it`s ok");
 
-window.onscroll = function () { scrollFunction2() };
+window.onscroll = function () { scrollFunction() };
 
 
 function scrollFunction() {
@@ -13,6 +14,9 @@ function scrollFunction() {
         header.style.padding =  "0 20em 0 20em";
         avatar.style.height = "3em";
         avatar.style.width = "3em";
+        menuButton.style.height = "3em";
+        menuButton.style.width = "3em";
+        menuButton.style.top = "0";
 
     }
     else {
@@ -20,6 +24,9 @@ function scrollFunction() {
         header.style.padding =  "5em 20em 5em 20em";
         avatar.style.height = "8em";
         avatar.style.width = "8em";
+        menuButton.style.height = "8em";
+        menuButton.style.width = "8em";
+        menuButton.style.top = "5em";
     }
 } 
 
