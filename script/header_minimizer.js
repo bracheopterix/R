@@ -1,7 +1,7 @@
 
 let header = document.getElementById('headerbox');
 let avatar = document.getElementById('headerbox-inner-avatar-img')
-let menuButton = document.getElementById('headerbox-inner-menu-button')
+let menuButton = document.getElementById('headerbox-inner-menu_button')
 
 console.log("it`s ok");
 
@@ -17,6 +17,8 @@ function scrollFunction() {
         menuButton.style.height = "3em";
         menuButton.style.width = "3em";
         menuButton.style.top = "0";
+        menuButton.style.backgroundSize = "3em";
+        menuButton.style.opacity ="1";
 
     }
     else {

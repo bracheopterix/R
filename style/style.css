@@ -51,19 +51,24 @@ body {
     width: 3em;
 } */
 
-.headerbox-inner-menu_button img {
-    background: var(--black);
-    position: absolute;
+.headerbox-inner-menu_button  {
+    font-size: inherit;
+    /* background: var(--black); */
+    background-image: url('../img/Menu2.svg');
+    background-size: 8em;
     width: 8em;
     height: 8em;
+    border: none;
+    position: absolute;
     left: 20em;
     top: 5em;
     opacity: 0;
     transition-duration: 0.2s;
     transition-timing-function: ease-in;
+    
 }
 
-.headerbox-inner-menu_button:hover img {
+.headerbox-inner-menu_button:hover  {
     opacity: 1;
 }
 
