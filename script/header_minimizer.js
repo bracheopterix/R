@@ -9,7 +9,7 @@ window.onscroll = function () { scrollFunction() };
 
 
 function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
         header.style.maxHeight =  "3em";
         header.style.padding =  "0 20em 0 20em";
         avatar.style.height = "3em";
@@ -32,13 +32,3 @@ function scrollFunction() {
     }
 } 
 
-// function scrollFunction2() {
-//     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//         header.classList.add('headerbox_mini');
-//         avatar.classList.add('headerbox-inner-avatar_mini')
-//     }
-//     else {
-//         header.classList.remove('headerbox_mini');
-//         avatar.classList.remove('headerbox-inner-avatar_mini')
-//     }
-// } 
