@@ -14,6 +14,10 @@
     src: url(./Inter-VariableFont.woff2);
 }
 
+img {
+    
+}
+
 body {
     font-family: Inter;
     font-weight: 400;
@@ -24,10 +28,16 @@ body {
 .headerbox {
     border-style: none;
     max-height: fit-content;
-    background-color: var(--main);
     padding: 5em 20em 5em 20em;
+    background-color: var(--main);
     position: sticky;
     top: 0;
+}
+
+.headerbox.mini {
+    transition: 0.5s;
+    max-height: 3em;
+    padding: 0em 20em 0em 20em;
 }
 
 .headerbox-inner {
@@ -35,15 +45,20 @@ body {
     max-height: fit-content;
 }
 
-.headerbox-inner_mini {
-    max-height: 3em;
-    padding: 0 20em 0 20em;
-}
 
-.headerbox-inner-avatar img {
+.headerbox-inner-avatarbox {
+    background-image: url(../img/Avatar.svg);
+    background-size: contain;
     width: 8em;
     height: 8em;
 }
+
+.headerbox-inner-avatarbox.mini {
+    transition: 0.5s;
+    width: 3em;
+    height: 3em;
+}
+
 
 .headerbox-inner-menu_button {
     font-size: inherit;
