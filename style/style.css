@@ -14,9 +14,6 @@
     src: url(./Inter-VariableFont.woff2);
 }
 
-img {
-    
-}
 
 body {
     font-family: Inter;
@@ -35,14 +32,15 @@ body {
 }
 
 .headerbox.mini {
-    transition: 0.5s;
     max-height: 3em;
     padding: 0em 20em 0em 20em;
+    transition: 0.5s;
 }
 
 .headerbox-inner {
     max-width: fit-content;
     max-height: fit-content;
+    transition: 0.5s;
 }
 
 
@@ -51,14 +49,20 @@ body {
     background-size: contain;
     width: 8em;
     height: 8em;
+    transition: 0.5s;
+}
+
+.headerbox-inner-avatarbox:hover {
+    background-image: url(../img/Menu2.svg);
+    
 }
 
 .headerbox-inner-avatarbox.mini {
-    transition: 0.5s;
     width: 3em;
     height: 3em;
-}
+    transition: 0.5s;
 
+}
 
 .headerbox-inner-menu_button {
     font-size: inherit;
