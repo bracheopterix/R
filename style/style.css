@@ -62,7 +62,6 @@ body {
 
 .headerbox-inner-menu_button {
     font-size: inherit;
-    /* background: var(--black); */
     background-image: url('../img/Menu2.svg');
     background-size: 8em;
     width: 8em;
