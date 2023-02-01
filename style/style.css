@@ -35,6 +35,11 @@ body {
     max-height: fit-content;
 }
 
+.headerbox-inner_mini {
+    max-height: 3em;
+    padding: 0 20em 0 20em;
+}
+
 .headerbox-inner-avatar img {
     width: 8em;
     height: 8em;
