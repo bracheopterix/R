@@ -35,11 +35,13 @@ body {
     top: 0;
 }
 
-.headerbox.mini {
+html:not([data-scroll='0']) .headerbox.mini {
     max-height: 3em;
     padding: 0em 20em 0em 20em;
     transition: 0.5s;
 }
+
+
 
 .headerbox-inner {
     max-width: fit-content;
@@ -59,6 +61,12 @@ body {
 .headerbox-inner-avatarbox:hover {
     background-image: url(../img/Menu2.svg);
     
+}
+
+html:not([data-scroll='0']) .headerbox.mini {
+    max-height: 3em;
+    padding: 0em 20em 0em 20em;
+    transition: 0.5s;
 }
 
 .headerbox-inner-avatarbox.mini {
