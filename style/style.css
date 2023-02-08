@@ -58,7 +58,8 @@ html:not([data-scroll='0']) .headerbox {
 
 .headerbox-inner-avatarbox:hover {
     background-image: url(../img/Menu2.svg);
-    box-shadow: black 10px 10px;
+    box-shadow: var(--black) 10px 10px;
+    transition: 0.3s;
     
 }
 
@@ -123,6 +124,23 @@ html:not([data-scroll='0']) .headerbox-inner-avatarbox {
     text-decoration: none;
     color: var(--contrast);
 
+}
+
+
+.losos-box {
+    padding: 2em 0 2em 0;
+    background-color: var(--white);
+    
+}
+
+.losos-answer {
+    min-height: 1em;
+    border-style: solid;
+    border-width: 0.1em;
+    width: 9em;
+    min-width: fit-content;
+    margin: 1em 0 1em 0;
+    text-align: center;
 }
 
 footer {
