@@ -58,6 +58,7 @@ html:not([data-scroll='0']) .headerbox {
 
 .headerbox-inner-avatarbox:hover {
     background-image: url(../img/Menu2.svg);
+    box-shadow: black 10px 10px;
     
 }
 
