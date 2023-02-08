@@ -1,14 +1,10 @@
-var Losos_answer = document.getElementById("losos-answer");
-var Losos_button = document.getElementById("losos-button");
-console.log(Losos_button);
+const lososAnswer = document.getElementById("losos-answer");
+const lososButton = document.getElementById("losos-button");
 
-var Losos = Math.random();
-Losos = Math.round(Losos*10);
-console.log(Losos);
-// var Losos_to_string = Losos.toString;
-// console.log(Losos_to_string);
+const losos = Math.round(Math.random()*10);
+console.log(losos);
 
 
-function Losos_function (){
-    Losos_answer.innerHTML = Losos;
+function lososFunction (){
+    lososAnswer.innerHTML = losos;
 };
