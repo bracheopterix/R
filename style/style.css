@@ -6,7 +6,11 @@
     --maincold: #56488D;
     --main: #77488D;
     --mainwarm: #84488D;
-
+    /* dreamy color scheme */
+    --d-contrast: #f7d439;
+    --d-maincold: #8b9c0c;
+    --d-main: #cfa818;
+    --d-mainwarm: #bf7541;
 }
 
 @font-face {
