@@ -1,0 +1,15 @@
+
+.losos-box {
+    padding-bottom: 2em;
+    background-color: var(--white);
+}
+
+.losos-answer {
+    min-height: 1.2em;
+    border-style: solid;
+    border-width: 0.1em;
+    width: 9em;
+    min-width: fit-content;
+    margin: 1em 0 1em 0;
+    text-align: center;
+}

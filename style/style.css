@@ -42,15 +42,16 @@ button:hover {
 .headerbox {
     border-style: none;
     max-height: fit-content;
-    padding: 5em 20em 5em 20em;
+    padding: 5vw 20vw 5vw 20vw;
     background-color: var(--main);
     position: sticky;
     top: 0;
+    transition: 0.5s;
 }
 
 html:not([data-scroll='0']) .headerbox {
     max-height: 3em;
-    padding: 0em 20em 0em 20em;
+    padding: 0vw 20vw 0vw 20vw;
     transition: 0.5s;
 }
 
@@ -71,9 +72,9 @@ html:not([data-scroll='0']) .headerbox {
 
 .headerbox-inner-avatarbox:hover {
     background-image: url(../img/Menu2.svg);
-    box-shadow: var(--black) 10px 10px;
+    box-shadow: var(--black) 1em 1em;
     transition: 0.3s;
-    
+
 }
 
 
@@ -84,28 +85,8 @@ html:not([data-scroll='0']) .headerbox-inner-avatarbox {
 
 }
 
-.headerbox-inner-menu_button {
-    font-size: inherit;
-    background-image: url('../img/Menu2.svg');
-    background-size: 8em;
-    width: 8em;
-    height: 8em;
-    border: none;
-    position: absolute;
-    left: 20em;
-    top: 5em;
-    opacity: 0;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in;
-
-}
-
-.headerbox-inner-menu_button:hover {
-    opacity: 1;
-}
-
 .main-inner {
-    padding: 5em 20em 5em 20em;
+    padding: 5vw 20vw 5vw 20vw;
 }
 
 .main-inner-box {
@@ -140,20 +121,6 @@ html:not([data-scroll='0']) .headerbox-inner-avatarbox {
 }
 
 
-.losos-box {
-    padding: 2em 0 2em 0;
-    background-color: var(--white); 
-}
-
-.losos-answer {
-    min-height: 1.2em;
-    border-style: solid;
-    border-width: 0.1em;
-    width: 9em;
-    min-width: fit-content;
-    margin: 1em 0 1em 0;
-    text-align: center;
-}
 
 footer {
     height: 2em;
@@ -163,19 +130,50 @@ footer {
 @media only screen and (max-device-width: 700px) {
 
     .headerbox {
-        border-style: none;
+        padding: 5vw 10vw 5vw 10vw;
+        transition: 0.5s;
     }
-
 
     .main-inner {
-        padding: 5em;
+        padding: 5vw 10vw 5vw 10vw;
+        transition: 0.5s;
     }
 
+    .headerbox-inner-avatarbox {
+        width: 8em;
+        height: 8em;
+        transition: 0.5s;
+    }
 
+    html:not([data-scroll='0']) .headerbox-inner-avatarbox {
 
-
-
+        transform: scaleY(0);
+        transition: 0.1s;
+    }
 
 
 }
 
+/* @media screen and (max-width: 600px) {
+    .headerbox {
+        padding: 5vw 10vw 5vw 10vw;
+        transition: 0.5s;
+    }
+
+    .main-inner {
+        padding: 5vw 10vw 5vw 10vw;
+        transition: 0.5s;
+    }
+
+    .headerbox-inner-avatarbox {
+        width: 8em;
+        height: 8em;
+        transition: 0.5s;
+    }
+
+    html:not([data-scroll='0']) .headerbox-inner-avatarbox {
+
+        transform: scaleY(0);
+        transition: 0.1s;
+    }
+} */
