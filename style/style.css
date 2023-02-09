@@ -159,3 +159,23 @@ footer {
     height: 2em;
     background-color: var(--main);
 }
+
+@media only screen and (max-device-width: 700px) {
+
+    .headerbox {
+        border-style: none;
+    }
+
+
+    .main-inner {
+        padding: 5em;
+    }
+
+
+
+
+
+
+
+}
+
