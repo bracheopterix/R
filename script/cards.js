@@ -1,21 +1,26 @@
+const cardVerb = document.getElementById("card-verb");
+const cardMeaning = document.getElementById("card-meaning");
+console.log(cardVerb, cardMeaning);
 
-const cardButton = document.getElementById("card-button");
-console.log("I got the button - ", cardButton);
+const data = [
+    {verb: 1, meaning: 'hello'},
+    {verb: 2, meaning: 'herro'},
+    {verb: 5, meaning: '6'},
+    {verb: 8, meaning: '9'},
+];
 
-function test() {
+
+function cardChange() {
     console.log("it worked");
+    const foo = getRandomPair();
+    const verb22 = foo.verb;
+    const meaning22 = foo.meaning;
+    console.log(verb22, meaning22);
+    cardVerb.innerHTML = verb22;
+    cardMeaning.innerHTML = meaning22;
 }
 
-
-
-function getRandomItem (){
-    console.log("function is ok")
-    const randomIndex = Math.round(Math.random()*array.length);
-    const item = array[randomIndex];
-    return item;
+function getRandomPair() {
+    const randomIndex = Math.round(Math.random() * (data.length - 1));
+    return data[randomIndex];
 }
-const array = [1, 'hello', 5, 8];
-const array2 = [1, 'hello', 5, 8];
-const result = getRandomItem(array);
-const answer = getRandomItem(array2)
-console.log(result,);
