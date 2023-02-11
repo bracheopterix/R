@@ -1,0 +1,10 @@
+Mega plan - do it all on react with blocks for pictures, video, texts.
+All media are stored on other platforms and inserted by links
+Bonus - daydream part with Sertaret sketches
+
+
+Now we are having problem with monkey-patched footer (with class - absolute bottom)
+We need to have a menu animation and logic
+Losos and word game should go to another progect, but may stay by now. Losos may be an easter-egg
+
+All blocks store in their common folder?

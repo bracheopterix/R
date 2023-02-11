@@ -2,13 +2,16 @@
 
     --white: #FFFFFF;
     --black: #000000;
+    --coal: #1a1919;
+    /* rr color scheme */
     --contrast: #C447FF;
     --maincold: #56488D;
     --main: #77488D;
     --mainwarm: #893995;
     /* dreamy color scheme */
-    --d-contrast: #f7d439;
-    --d-maincold: #8b9c0c;
+    --d-contrastcold: #37d1cc;
+    --d-contrastwarm: #f96a87;
+    --d-maincold: #f7d439;
     --d-main: #cfa818;
     --d-mainwarm: #bf7541;
 }
@@ -29,6 +32,7 @@ body {
     margin: 0;
     min-height: 100%;
 }
+
 main {
     min-height: 100%;
 }
@@ -57,7 +61,7 @@ button:hover {
 }
 
 html:not([data-scroll='0']) .headerbox {
-    max-height: 3em;
+    max-height: 5vh;
     padding: 0vw 20vw 0vw 20vw;
     transition: 0.5s;
 }
@@ -72,8 +76,8 @@ html:not([data-scroll='0']) .headerbox {
 .headerbox-inner-avatarbox {
     background-image: url(../img/Avatar.svg);
     background-size: contain;
-    width: 8em;
-    height: 8em;
+    width: 14vh;
+    height: 14vh;
     transition: 0.5s;
 }
 
@@ -81,13 +85,12 @@ html:not([data-scroll='0']) .headerbox {
     background-image: url(../img/Menu2.svg);
     box-shadow: var(--black) 1em 1em;
     transition: 0.3s;
-
 }
 
 
 html:not([data-scroll='0']) .headerbox-inner-avatarbox {
-    width: 3em;
-    height: 3em;
+    width: 5vh;
+    height: 5vh;
     transition: 0.5s;
 
 }
@@ -96,12 +99,37 @@ html:not([data-scroll='0']) .headerbox-inner-avatarbox {
     padding: 5vw 20vw 5vw 20vw;
 }
 
+.main-inner.ribbon {
+    padding: 0vw 20vw 0vw 20vw;;
+    background-color: var(--coal);
+}
+
+.test-img{
+    width: 100%;
+    height: 1000px;
+    font-size: 20px;
+    border-style: solid;
+}
+
+
+.test-img:hover + .hide {
+    padding: 1vh;
+    display:block;
+    background-color: var(--main);
+    color: var(--white);
+    font-size: 2vh;
+  }
+  
+  .hide {
+    display:none;
+    }
+
+
 .main-inner-box {
     border-style: none none solid none;
     border-width: 0.1em;
     border-color: var(--main);
     padding: 1em 0 1em 0;
-
 }
 
 .main-inner-box-header {
@@ -118,25 +146,22 @@ html:not([data-scroll='0']) .headerbox-inner-avatarbox {
 
 .main-inner-box-text {
     margin: 1em 0 1em 0;
-
 }
 
 .main-inner-box-link {
     text-decoration: none;
     color: var(--contrast);
-
 }
-
-
 
 footer {
-    height: 2em;
+    height: 3vh;
     width: 100%;
     background-color: var(--main);
-
 }
 
-footer.absolute-bottom{
+
+
+footer.absolute-bottom {
     position: absolute;
     bottom: 0;
 }
@@ -153,6 +178,11 @@ footer.absolute-bottom{
         transition: 0.5s;
     }
 
+    .main-inner.ribbon {
+        padding: 0;
+        transition: 0.5s;
+    }
+
     .headerbox-inner-avatarbox {
         width: 8em;
         height: 8em;
@@ -165,6 +195,8 @@ footer.absolute-bottom{
         transition: 0.1s;
     }
 
+
+    
 
 }
 
