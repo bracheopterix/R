@@ -111,7 +111,6 @@ html:not([data-scroll='0']) .headerbox-inner-avatarbox {
     border-style: solid;
 }
 
-
 .test-img:hover + .hide {
     padding: 1vh;
     display:block;
