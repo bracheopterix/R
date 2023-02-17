@@ -49,7 +49,6 @@ button:hover {
     border-style: none;
 }
 
-
 .headerbox {
     border-style: none;
     max-height: fit-content;
@@ -87,21 +86,14 @@ html:not([data-scroll='0']) .headerbox {
     transition: 0.3s;
 }
 
-
 html:not([data-scroll='0']) .headerbox-inner-avatarbox {
     width: 5vh;
     height: 5vh;
     transition: 0.5s;
-
 }
 
 .main-inner {
     padding: 5vw 20vw 5vw 20vw;
-}
-
-.main-inner.ribbon {
-    padding: 0vw 20vw 0vw 20vw;;
-    background-color: var(--coal);
 }
 
 .test-img{
@@ -110,19 +102,6 @@ html:not([data-scroll='0']) .headerbox-inner-avatarbox {
     font-size: 20px;
     border-style: solid;
 }
-
-
-.test-img:hover + .hide {
-    padding: 1vh;
-    display:block;
-    background-color: var(--main);
-    color: var(--white);
-    font-size: 2vh;
-  }
-  
-  .hide {
-    display:none;
-    }
 
 
 .main-inner-box {
