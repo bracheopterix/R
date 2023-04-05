@@ -21,6 +21,15 @@
     src: url(./Inter-VariableFont.woff2);
 }
 
+a {
+    text-decoration-line: none;
+    color: var(--main)
+}
+
+a:active {
+    color: var(--contrast);
+}
+
 html {
     min-height: 100%;
 }
@@ -28,7 +37,7 @@ html {
 body {
     font-family: Inter;
     font-weight: 400;
-    background-color: var(--white);
+    background-color: var(--main);
     margin: 0;
     min-height: 100%;
 }
@@ -64,6 +73,7 @@ html:not([data-scroll='0']) .headerbox {
     padding: 0vw 20vw 0vw 20vw;
     transition: 0.5s;
 }
+/* I think, I should channge padding thing on "stay on center" and "i am x% of screen" */
 
 .headerbox-inner {
     max-width: fit-content;
@@ -71,8 +81,9 @@ html:not([data-scroll='0']) .headerbox {
     transition: 0.5s;
 }
 
+/* This is logo */
 
-.headerbox-inner-avatarbox {
+.headerbox-inner-logobox {
     background-image: url(../img/Avatar.svg);
     background-size: contain;
     width: 14vh;
@@ -80,20 +91,32 @@ html:not([data-scroll='0']) .headerbox {
     transition: 0.5s;
 }
 
-.headerbox-inner-avatarbox:hover {
+.headerbox-inner-logobox:hover {
     background-image: url(../img/Menu2.svg);
     box-shadow: var(--black) 1em 1em;
     transition: 0.3s;
 }
 
-html:not([data-scroll='0']) .headerbox-inner-avatarbox {
+html:not([data-scroll='0']) .headerbox-inner-logobox {
     width: 5vh;
     height: 5vh;
     transition: 0.5s;
 }
 
+/* This is menu */
+.headerbox-inner-menubox {
+    height: 14vh;
+    width: calc(100vw - 54vh);
+}
+
 .main-inner {
-    padding: 5vw 20vw 5vw 20vw;
+    padding: 3vw 20vw 3vw 20vw;
+    background-color: var(--white);
+}
+
+.main-inner-header {
+    font-size: 4em;
+    font-weight:bold;
 }
 
 .test-img{
@@ -103,23 +126,20 @@ html:not([data-scroll='0']) .headerbox-inner-avatarbox {
     border-style: solid;
 }
 
-
 .main-inner-box {
+    padding: 1em 0 0em 0;
+}
+
+.main-inner-box.preview {
     border-style: none none solid none;
     border-width: 0.1em;
     border-color: var(--main);
-    padding: 1em 0 1em 0;
+    margin-bottom: 1em;
 }
 
 .main-inner-box-header {
-    background-color: var(--main);
-    color: var(--white);
-    font-weight: bold;
-    text-transform: capitalize;
-    font-weight: 500;
-    min-height: 1em;
-    width: fit-content;
-    padding: 0.5em 1em 0.5em 1em;
+    font-size: 1.5em;
+    font-weight:600;
 }
 
 
@@ -132,13 +152,28 @@ html:not([data-scroll='0']) .headerbox-inner-avatarbox {
     color: var(--contrast);
 }
 
-footer {
+
+.scroll-to-top-button {
+    background-color: var(--white);
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    left: 20vw;
+    border-style: solid;
+    border-width: 1vh;
+    border-color: var(--white);
+}
+
+.pseudo-footer a {
+    text-decoration-line: none;
+    font-weight: 600;
+}
+
+.pseudo-footer {
     height: 3vh;
     width: 100%;
     background-color: var(--main);
 }
-
-
 
 footer.absolute-bottom {
     position: absolute;
@@ -175,7 +210,7 @@ footer.absolute-bottom {
     }
 
 
-    
+
 
 }
 
