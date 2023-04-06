@@ -167,8 +167,14 @@ html:not([data-scroll='0']) .headerbox-inner ul {
 }
 
 .headerbox-inner-menubox li:hover {
-    background-color: var(--contrast);
+    background-color: var(--main);
     color: var(--black);
+    outline: var(--black);
+    outline-width: 0.5vh;
+    outline-style: solid;
+    left: 1vh;
+    outline-offset:-0.25vh;
+    
 }
 
 
