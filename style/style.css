@@ -80,8 +80,8 @@ html:not([data-scroll='0']) .headerbox {
 /* I think, I should channge padding thing on "stay on center" and "i am x% of screen" */
 
 .headerbox-inner {
-    max-width: 14vh;
-    max-height: 14vh;
+    max-width: 15vh;
+    max-height: 15vh;
     transition: 0.5s;
 }
 
@@ -197,6 +197,25 @@ html:not([data-scroll='0']) .headerbox-inner ul {
     padding: 3vw 20vw 3vw 20vw;
     background-color: var(--white);
 }
+
+.main-inner.black {
+    background-color: var(--coal);
+}
+
+.main-inner-container {
+    display: grid;
+    gap: 1vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    
+}
+
+.item {
+    background-color: wheat;
+    padding: 1vh;
+    text-align: center;
+}
+
 
 .main-inner-header {
     font-size: 4em;
