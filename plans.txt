@@ -8,3 +8,7 @@ We need to have a menu animation and logic
 Losos and word game should go to another progect, but may stay by now. Losos may be an easter-egg
 
 All blocks store in their common folder?
+
+
+
+pick the menu up in the form of display:hidden - by click it should go to the right position and show itself;

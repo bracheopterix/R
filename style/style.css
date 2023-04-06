@@ -61,7 +61,7 @@ button:hover {
 .headerbox {
     border-style: none;
     max-height: fit-content;
-    padding: 5vw 20vw 5vw 20vw;
+    padding: 5vh 20vw 5vh 20vw;
     background-color: var(--main);
     position: sticky;
     top: 0;
@@ -70,16 +70,24 @@ button:hover {
 
 html:not([data-scroll='0']) .headerbox {
     max-height: 5vh;
-    padding: 0vw 20vw 0vw 20vw;
+    padding: 0vmax 20vw 0vmax 20vw;
     transition: 0.5s;
 }
+
+
+
 
 /* I think, I should channge padding thing on "stay on center" and "i am x% of screen" */
 
 .headerbox-inner {
-    max-width: fit-content;
+    max-width: 14vh;
     max-height: 14vh;
     transition: 0.5s;
+}
+
+html:not([data-scroll='0']) .headerbox-inner {
+    width: 5vh;
+    height: 5vh;
 }
 
 /* This is logo */
@@ -87,14 +95,14 @@ html:not([data-scroll='0']) .headerbox {
 .headerbox-inner-logobox {
     background-image: url(../img/Avatar.svg);
     background-size: contain;
-    width: 14vh;
-    height: 14vh;
+    width: 15vh;
+    height: 15vh;
     transition: 0.5s;
 }
 
 .headerbox-inner-logobox:hover {
     background-image: url(../img/Menu2.svg);
-    box-shadow: var(--black) 2vh 0;
+    /* box-shadow: var(--black) 2vh 0; */
     transition: 0.3s;
 }
 
@@ -106,50 +114,78 @@ html:not([data-scroll='0']) .headerbox-inner-logobox {
 
 /* This is menu */
 .headerbox-inner-menubox {
-    height: 14vh;
-    width: 0;
-    position: relative;
-    top: -14vh;
-    left: 0vh;
-    padding: auto;
-    /* opacity: 0; */
-    transition: 0.5s;
-    display: inline-flex;
-}
-
-.headerbox-inner-menubox:hover {
-    opacity: 100;
-    width:100em;
-    transition: 3s;
-    
-    left: 16vh;
-    
-}
-
-.headerbox-inner-menubox img {
-    height: 14vh;
-    width: 14vh;
-    margin-left: 1vh;
-}
-
-.headerbox-inner-menubox .illustrations {
-background-image: url(../img/menu/Frame\ 30.svg);
-background-size: contain;
-    width: 14vh;
-    height: 14vh;
-}
-.headerbox-inner-menubox .stories {
-
-}
-.headerbox-inner-menubox .youtube {
-
-}
-.headerbox-inner-menubox-ender {
-    height: 14vh;
-    width: 3vh;
+    height: 15vh;
+    width: 17vh;
     background-color: var(--black);
-    margin-left: 1vh ;
+    z-index: -1;
+    position: relative;
+    top: -15vh;
+    padding-right: 3vh;
+    margin: 0;
+    padding: 0;
+
 }
+
+html:not([data-scroll='0']) .headerbox-inner-menubox {
+    height: 5vh;
+    top: -5vh;
+    left: 5vh;
+    padding-left: 2vh;
+    width: fit-content;
+}
+
+
+
+.headerbox-inner ul {
+    list-style-type: none;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.headerbox-inner ul:hover {
+    transition: 0.5s;
+    width: 30vh;
+}
+
+html:not([data-scroll='0']) .headerbox-inner ul {
+    height: 5vh;
+    flex-direction: row;
+}
+
+.headerbox-inner-menubox li {
+    padding: 1vh;
+    height: 3vh;
+    min-width: 0vh;
+    background-color: var(--black);
+    color: var(--black);
+    text-align: end;
+    padding-right: 3vh;
+    font-size: 2.5vh;
+    color: var(--main);
+}
+
+.headerbox-inner-menubox li:hover {
+    background-color: var(--contrast);
+    color: var(--black);
+}
+
+
+.ender {
+    background-color: var(--contrast);
+    width: 3vh;
+    height: 14vh;
+    flex-shrink: 1;
+    padding: 0;
+}
+
+
+/* .menubutton:hover {
+    background-color: var(--contrast);
+    height: fit-content;
+} */
+
 
 .main-inner {
     padding: 3vw 20vw 3vw 20vw;
