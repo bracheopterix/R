@@ -16,4 +16,8 @@ pick the menu up in the form of display:hidden - by click it should go to the ri
 
 illustration:
 you may change grid collumns to flex-collumns?
-every picture on click should open itself to the 100vmin.
+
+every picture on click should open itself to the 100vmin. Should they have new colored outline on hover? May it be with child selector.
+
+if delete outline on every pic, (They would not align by horiaontal lines anyway and it is better this way) you may choose to tile background with non-border vector waves and it would be seen in gaps between pictures as dashes
+But it may not be in favor of picture`s textures. 
