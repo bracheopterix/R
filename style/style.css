@@ -175,8 +175,7 @@ html:not([data-scroll='0']) .headerbox-inner ul {
     
 }
 
-
-.scroll-to-top-button-header {
+.scroll-to-top-button {
     background-color: var(--white);
     height: 3vh;
     width: 3vh;
@@ -190,8 +189,7 @@ html:not([data-scroll='0']) .headerbox-inner ul {
     /* display: none; */
 }
 
-
-html:not([data-scroll='0']) .scroll-to-top-button-header {
+html:not([data-scroll='0']) .scroll-to-top-button {
 /* display: block; */
 top:0;
 transition: 1s;
