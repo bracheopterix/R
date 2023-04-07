@@ -16,3 +16,4 @@ pick the menu up in the form of display:hidden - by click it should go to the ri
 
 illustration:
 you may change grid collumns to flex-collumns?
+every picture on click should open itself to the 100vmin.
