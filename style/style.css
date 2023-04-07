@@ -200,22 +200,29 @@ html:not([data-scroll='0']) .headerbox-inner ul {
 
 .main-inner.black {
     background-color: var(--coal);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .main-inner-container {
     display: grid;
-    gap: 1vh;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    
+    grid-template-columns: repeat(3, 1fr);    
 }
 
-.item {
+.main-inner-container-column {
+    padding: 0;
+    font-size:0;
+}
+
+.main-inner-container-column .item {
     background-color: wheat;
-    padding: 1vh;
     text-align: center;
+    width: calc((100vw - 40vw) / 3);
+    margin: 0;
+    outline-style: solid;
+    outline-width: 0.3vw;
+    outline-color: var(--coal);
 }
-
 
 .main-inner-header {
     font-size: 4em;
@@ -256,6 +263,27 @@ html:not([data-scroll='0']) .headerbox-inner ul {
 }
 
 
+.scroll-to-top-button-header {
+    background-color: var(--white);
+    height: 3vh;
+    width: 3vh;
+    font-size: 2.5vh;
+    position: absolute;
+    right: 20vw;
+    top:-10vh;
+    border-style: solid;
+    border-width: 1vh;
+    border-color: var(--white);
+    /* display: none; */
+}
+
+
+html:not([data-scroll='0']) .scroll-to-top-button-header {
+/* display: block; */
+top:0;
+transition: 1s;
+}
+
 .scroll-to-top-button {
     background-color: var(--white);
     height: fit-content;
@@ -266,6 +294,8 @@ html:not([data-scroll='0']) .headerbox-inner ul {
     border-width: 1vh;
     border-color: var(--white);
 }
+
+
 
 .pseudo-footer a {
     text-decoration-line: none;
