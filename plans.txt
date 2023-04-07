@@ -10,5 +10,9 @@ Losos and word game should go to another progect, but may stay by now. Losos may
 All blocks store in their common folder?
 
 
-
+Menu:
 pick the menu up in the form of display:hidden - by click it should go to the right position and show itself;
+
+
+illustration:
+you may change grid collumns to flex-collumns?

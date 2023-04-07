@@ -134,8 +134,6 @@ html:not([data-scroll='0']) .headerbox-inner-menubox {
     width: fit-content;
 }
 
-
-
 .headerbox-inner ul {
     list-style-type: none;
     transition: 0.5s;
@@ -178,12 +176,25 @@ html:not([data-scroll='0']) .headerbox-inner ul {
 }
 
 
-.ender {
-    background-color: var(--contrast);
+.scroll-to-top-button-header {
+    background-color: var(--white);
+    height: 3vh;
     width: 3vh;
-    height: 14vh;
-    flex-shrink: 1;
-    padding: 0;
+    font-size: 2.5vh;
+    position: absolute;
+    right: 20vw;
+    top:-10vh;
+    border-style: solid;
+    border-width: 1vh;
+    border-color: var(--white);
+    /* display: none; */
+}
+
+
+html:not([data-scroll='0']) .scroll-to-top-button-header {
+/* display: block; */
+top:0;
+transition: 1s;
 }
 
 
@@ -200,8 +211,8 @@ html:not([data-scroll='0']) .headerbox-inner ul {
 
 .main-inner.black {
     background-color: var(--coal);
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
 }
 
 .main-inner-container {
@@ -262,41 +273,6 @@ html:not([data-scroll='0']) .headerbox-inner ul {
     color: var(--contrast);
 }
 
-
-.scroll-to-top-button-header {
-    background-color: var(--white);
-    height: 3vh;
-    width: 3vh;
-    font-size: 2.5vh;
-    position: absolute;
-    right: 20vw;
-    top:-10vh;
-    border-style: solid;
-    border-width: 1vh;
-    border-color: var(--white);
-    /* display: none; */
-}
-
-
-html:not([data-scroll='0']) .scroll-to-top-button-header {
-/* display: block; */
-top:0;
-transition: 1s;
-}
-
-.scroll-to-top-button {
-    background-color: var(--white);
-    height: fit-content;
-    width: fit-content;
-    position: relative;
-    left: 20vw;
-    border-style: solid;
-    border-width: 1vh;
-    border-color: var(--white);
-}
-
-
-
 .pseudo-footer a {
     text-decoration-line: none;
     font-weight: 600;
@@ -342,6 +318,9 @@ footer.absolute-bottom {
         transition: 0.1s;
     }
 
+    .main-inner-container-column .item {
+        width: calc((100vw - 20vw) / 3);
+    }
 
 
 
