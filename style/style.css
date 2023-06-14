@@ -54,6 +54,7 @@ body {
 
 .headerbox-inner-avatarbox:hover {
     background-image: url(../img/Menu2.svg);
+    transition: 0.5s;
     
 }
 
@@ -64,25 +65,7 @@ body {
 
 }
 
-.headerbox-inner-menu_button {
-    font-size: inherit;
-    background-image: url('../img/Menu2.svg');
-    background-size: 8em;
-    width: 8em;
-    height: 8em;
-    border: none;
-    position: absolute;
-    left: 20em;
-    top: 5em;
-    opacity: 0;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in;
 
-}
-
-.headerbox-inner-menu_button:hover {
-    opacity: 1;
-}
 
 .main-inner {
     padding: 5em 20em 5em 20em;
